@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "jost", sans-serif;
+
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --gray: #f4f4f4;
+    --golden-hour: #f1b555;
+    --antique-brown: #9b281a;
+
+}
+
+/* BASIC STYLING */
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.wrapper{
+    max-width: 1450px;
+    margin: auto;
+    padding-inline: 2rem;
+}
+
+.golden-bg{
+    background: var(--golden-hour);
+}
+
+.brown-bg{
+    background: var(--antique-brown);
+}
+
+/* HEADER PART */
+
+.navbar {
+    height: 13vh;
+}
+
+.nav-icons {
+    gap: 1.5rem;
+}
+
+.icon {
+    gap: 1.1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* SECTIONS PART */
+
+.hero_section{
+    height: calc(100vh - 13vh);
+}
+.h1-heading{
+    font-size: 9rem;
+    text-transform: uppercase;
+    font-weight: 300;
+
+}
+
+span{
+    font-weight: bold;
+}
+
+.big-para{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.btn{
+    padding: .7rem 2rem;
+    font-size: .9rem;
+    color: var(--white);
+}
