@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "jost", sans-serif;
+   
+    
+    
 
 }
 
@@ -51,6 +54,11 @@ li {
     background: var(--antique-brown);
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 /* HEADER PART */
 
 .navbar {
@@ -74,8 +82,18 @@ li {
 
 /* SECTIONS PART */
 
-.hero_section{
+.hero-section{
     height: calc(100vh - 13vh);
+    justify-content: center;
+    position: relative;
+}
+.hero-section::before{
+    content: '';
+    position: absolute;
+    width: 25rem;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    background: var(--gray);
 }
 .h1-heading{
     font-size: 9rem;
@@ -96,4 +114,18 @@ span{
     padding: .7rem 2rem;
     font-size: .9rem;
     color: var(--white);
+    text-transform: uppercase;
+    border-radius: 5rem;
+    display: block;
+    justify-self: flex-end;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover{
+    background: var(--black);
+}
+
+.hero-image{
+    width: 50vw;
+    
 }
